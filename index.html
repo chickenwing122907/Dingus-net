@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dingus Network</title>
+    <style>
+        body {
+            font-family: Comic Sans MS, sans-serif;
+            background: linear-gradient(135deg, #f5d6cb, #e8c1b8);
+            color: #000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px #fff;
+        }
+        img {
+            width: 150px;
+            margin: 20px 0;
+            border-radius: 50%;
+            border: 5px solid #fff;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="url"] {
+            width: 80%;
+            max-width: 500px;
+            padding: 10px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #d17373;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #ba5c5c;
+        }
+        iframe {
+            width: 100%;
+            height: 80vh;
+            border: none;
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to The Dingus Network</h1>
+        <img src="https://i.imgur.com/P3uAM48.png" alt="Bingus the Cat">
+    </header>
+    <main>
+        <p>Much bald. Such sleek. Enter a URL to browse via Bingus:</p>
+        <form id="proxy-form">
+            <input type="url" id="url-input" placeholder="https://example.com" required>
+            <button type="submit">Dingus Go</button>
+        </form>
+        <iframe id="proxy-frame" hidden></iframe>
+    </main>
+    <footer>
+        <p>© 2025 The Dingus Network. Much bald. Very sleek.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
